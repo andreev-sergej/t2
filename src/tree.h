@@ -1,6 +1,8 @@
 #ifndef TREE
 #define TREE
 
+#include <math.h>
+
 typedef enum {V, H} Direct;
 
 typedef struct Node {

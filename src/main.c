@@ -1,12 +1,9 @@
 #include <stdio.h>
 #include "tree.h"
 #include "memory.h"
-#include "test.h"
 
 int main() 
 {
-    run_all_tests();
-
     int chain_start = 0, chain_end = 0;
     printf("Start of the chain: ");
     if (scanf("%d", &chain_start) == EOF)

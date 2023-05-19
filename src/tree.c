@@ -157,7 +157,18 @@ void node_to_memory(Node *node, int y, int x, Direct dir, char **memory)
                     }
                 }
             }
-            node_to_memory(new_node,(y += 1 - dir),(x += dir), !dir, memory);
+
+            if (dir == V)
+            {
+                y++;
+                node_to_memory(new_node, y, x, H, memory);
+            }
+            else
+            {
+                x++;
+                node_to_memory(new_node, y, x, V, memory);
+            }
+            //node_to_memory(new_node,(y += 1 - dir),(x += dir), !dir, memory); //переписать
         }
     }
 }
