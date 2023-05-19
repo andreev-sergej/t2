@@ -21,8 +21,9 @@ void run_test(char* testfile_path, int chain_start, int chain_end)
         printf("\033[1m\033[32mPASSED\033[0m\n");
     else
         printf("\033[1m\033[31mNOT PASSED\033[0m\n");
+        
     fclose(file1); 
-    
+
     fclose(file2);
 }
 
